@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+sample_program = "9484XY8sPuWKySxZ976fSutET8v2AT2gKSej2MzHQ9iU"
+
+[programs.devnet]
+sample_program = "9484XY8sPuWKySxZ976fSutET8v2AT2gKSej2MzHQ9iU"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/dev-ice/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
